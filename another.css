@@ -40,10 +40,6 @@ body {
   background-color: #777;
   padding: 3rem 5rem 4rem 5rem;
   background-color: var(--color-dark--1);
-
-  /* background-image: url("organic-basil-sweet.webp");
-  background-repeat: no-repeat;
-  background-size: contain; */
   font-size: medium;
   min-width: 300px;
 }
@@ -78,19 +74,14 @@ body {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 768px) {
-  .info-container {
-    flex: 0 0 auto;
-  }
-
+@media screen and (max-width: 575px) {
   .container {
-    /* display: flex; */
-    flex-direction: column; /* Change the flex direction to stack items vertically */
+    flex-direction: column;
+    gap: 2rem;
   }
+}
 
-  #map {
-    flex: 1;
-    height: auto; /* Allow the map's height to adjust based on content */
-  }
-  /* Adjust other styles as needed */
+#map {
+  flex: 1;
+  height: auto;
 }
